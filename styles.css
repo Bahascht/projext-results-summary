@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: white;
+}
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 40rem;
+  margin: auto;
+  margin-top: 9rem;
+  display: flex;
+  box-shadow: 5px 5px 5px lightgray;
+  border-radius: 1rem;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 7rem;
+  max-width: 90%;
+  height: 7rem;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  margin: auto;
+  padding: 1.5rem;
+  font-size: 0.5rem;
+}
+
+.circle span {
+  font-size: 3rem;
+}
+
+.first-half {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 1rem;
+  max-width: 20rem;
+  text-align: center;
+
+  padding: 1rem 2.5rem;
+}
+
+.second-half {
+  padding: 0 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-shadow: none;
+    height: 100%;
+  }
+  .first-half {
+    max-width: 100%;
+    border-radius: 0 0 1.5rem 1.5rem;
+    height: 400px;
+  }
+
+  button {
+    max-width: 100%;
+    padding-left: 0.75rem 5.25rem;
+  }
+}
+
+.second-half {
+  color: black;
+
+  max-width: 100%;
+  width: 85%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+
+.second-half ul {
+  list-style: none;
+}
+
+p,
+h1 {
+  margin: 1.5rem 0;
+}
+
+li {
+  margin-top: 1.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  height: 3rem;
+  justify-content: space-around;
+  padding: 0.5rem;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.red {
+  background-color: hsla(0, 100%, 67%, 0.25);
+  color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.25);
+
+  color: hsl(39, 100%, 56%);
+}
+
+.green {
+  font-size: 1rem;
+  background-color: hsla(166, 100%, 37%, 0.25);
+  color: hsl(166, 100%, 37%);
+}
+
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.25);
+  color: hsl(234, 85%, 45%);
+}
+
+.black {
+  color: black;
+}
+
+.even {
+  display: flex;
+}
+.number {
+  color: gray;
+}
+.number span {
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+img {
+  padding-right: 0.5rem;
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 1.25rem 5.25rem;
+
+  margin-top: 2rem;
+  border-radius: 2rem;
+  border: none;
+  width: 100%;
+  object-fit: cover;
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: darkgray;
+}
